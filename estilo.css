@@ -1,0 +1,58 @@
+head+body {
+    margin: 0.3%;
+}
+
+#titulo {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    background-color: rgb(187, 243, 243);
+}
+
+#encabezado {
+    /*le puse una imagen de fondo a la seccion para diferenciarla*/
+    background-image: url(slack.png);
+    background-repeat: repeat;
+    font-size: 17px;
+    font-family: cursive;
+}
+
+.datosPersonales {
+    margin-left: 1%;
+}
+
+#fotoPerfil:empty {
+    float: right;
+    border-radius: 50%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#sobreMi {
+    background-color: rgb(140, 197, 188);
+    font-family: cursive;
+}
+
+#trabajos {
+    background-color: rgb(208, 208, 240);
+}
+
+#educacion {
+    background-color: rgb(196, 215, 215);
+}
+
+#pieDePagina {
+    /*intente darle estilo de social bar, deberia completar la funcionalidad pero no me dio el tiempo*/
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 1rem;
+    background-color: rgb(107, 107, 232);
+    font-family: cursive;
+    display: flex;
+    justify-content: space-evenly;
+
+}
