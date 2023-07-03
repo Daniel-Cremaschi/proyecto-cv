@@ -5,7 +5,7 @@
 class Trabajo {
     lugar;
     puesto;
-    carrera;
+    funcion;
     lapso;
 
     constructor(lugar, puesto, carrera, lapso) {
@@ -23,7 +23,7 @@ class Trabajo {
         let lapso = document.createElement("p");
         lugar.innerHTML = "<b>Lugar: <b>" + this.lugar;
         puesto.innerHTML = "<b>Puesto: <b>" + this.puesto;
-        carrera.innerHTML = "<b>Carrera: <b>" + this.carrera;
+        carrera.innerHTML = "<b>Función: <b>" + this.carrera;
         lapso.innerHTML = "<b>Lapso: <b>" + this.lapso;
         laburo.appendChild(lugar);
         laburo.appendChild(puesto);

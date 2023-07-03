@@ -9,42 +9,44 @@
     <meta name="author" content="Cremaschi Daniel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
     <title>CV Daniel Cremaschi</title>
 </head>
 
 <body onload="dinamico()">
     <header>
-        <h1 id="titulo">Currículum Vitae   Cremaschi Daniel</h1>
+        <h1 id="titulo">CV Cremaschi Daniel</h1>
     </header>
     <main>
         <div class="clearfix" id="encabezado">
-            <img id="fotoPerfil" src="foto.jpg" alt="Foto" width="230em" onmouseover="aumentarFoto('fotoPerfil')" onmouseleave="disminuirFoto('fotoPerfil')">
+            <img id="fotoPerfil" src="foto.jpg" alt="Foto" width="230em" onmouseover="aumentarFoto('fotoPerfil')"
+                onmouseleave="disminuirFoto('fotoPerfil')">
 
             <article class="datosPersonales">
                 <p>
-                    <b>Nombre Completo</b>
+                    <b>Nombre Completo:</b>
                     Cremaschi Daniel Omar
                 </p>
                 <p>
-                    <b>Tipo y Número de documento</b>
+                    <b>Tipo y Número de documento:</b>
                     DNI 17.486.666
                 </p>
                 <p>
-                    <b>Fecha de Nacimiento</b>
+                    <b>Fecha de Nacimiento:</b>
                     23 / 09 / 1965
                 </p>
                 <p>
-                    <b>Estado Civil</b>
+                    <b>Estado Civil:</b>
                     Casado
                 </p>
                 <p>
-                    <b>Localidad</b>
+                    <b>Localidad:</b>
                     Ciudad Autónoma de Buenos Aires
                 </p>
                 <p>
-                    <b>Correo Electrónico</b>
+                    <b>Correo Electrónico:</b>
                     daniel_cremaschi@hotmail.com
                 </p>
             </article>
@@ -52,26 +54,28 @@
         <!-- Seccion agregada sobre mi, pequeño resumen personal-->
         <section id="sobreMi">
             <h2>Sobre mí</h2>
-            <p> Soy analítico, proactivo, autodidacta. Habituado al trabajo en equipo, comprometido con los resultados. En busca de un ambiente de trabajo colaborativo, en donde la experiencia de cada uno se una en pos de un objetivo común.              
+            <p> Soy analítico, proactivo, autodidacta. Habituado al trabajo en equipo, comprometido con los resultados.
+                En busca de un ambiente de trabajo colaborativo, en donde la experiencia de cada uno se una en pos de un
+                objetivo común.
             </p>
         </section>
         <section id="trabajos">
             <h2>Experiencia Laboral</h2>
         </section>
         <section id="educacion">
-            <h2 onclick="contraer()">Educación</h2>            
+            <h2 onclick="contraer()">Educación</h2>
             <div>
                 <h3>Esc Nac Sup de Comercio Gral San Martin</h3>
                 <p>
                     <b>Título obtenido</b>
-                     Perito Contable
+                    Perito Contable
                 </p>
             </div>
             <div>
                 <h3>Cursos Realizados</h3>
                 <p>
-                    <b>Proyecto Oracle Next Education:  </b>
-                     Desarrollo de aplicaciones web,
+                    <b>Proyecto Oracle Next Education: </b>
+                    Desarrollo de aplicaciones web,
                     Git y Github,
                     Soft Skills
                 </p>
@@ -80,23 +84,37 @@
                 <h3>Estudios en Curso</h3>
                 <p>
                     <b>Argentina Programa 4.0</b>
-                     Junior Web Full Stack Developer
+                    Junior Web Full Stack Developer
                 </p>
             </div>
         </section>
+
         <!-- fin de pagina con datos de contacto extras -->
-        <section id="pieDePagina">
-            <img src="github.svg" alt="iconoGithub" width="30em" >
-            <p>Daniel-Cremaschi </p>
-            <img src="linkedin.svg" alt="iconoLinkedin" width="30em">
-            <p>https://www.linkedin.com/in/daniel-cremaschi  </p>
-            <img src="whatsapp.svg" alt="iconoWha" width="30em">
-            <p>11 60590283</p>
-            <img src="discord.svg" alt="iconoDiscord" width="30em">
-            <p>Argentina Programa Etapa 2</p>
-        </section>        
+
+
     </main>
+    <footer>
+        <section class="pie-de-pagina">
+            <div class="container">
+                <div class="container_item">
+                    <img src="github.svg" alt="iconoGithub" width="20em" >
+                    <a> Daniel-Cremaschi </a>
+                </div>
+                <div class="container_item">
+                    <img src="linkedin.svg" alt="iconoLinkedin" width="20em" >
+                    <a>https://www.linkedin.com/in/daniel-cremaschi</a>
+                </div>
+                <div class="container_item">
+                    <img src="whatsapp.svg" alt="iconoWha" width="20em" >
+                    <a> 11 60590283 </a>
+                </div>
+              
+            </div>
+        </section>
+    </footer>
+
     <script src="porgramacion.js"></script>
 </body>
+
 
 </html>

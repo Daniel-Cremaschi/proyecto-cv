@@ -1,17 +1,20 @@
-head+body {
+head+main {
     margin: 0.3%;
+    display: grid;
+
 }
+
 
 #titulo {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     background-color: rgb(187, 243, 243);
 }
 
 #encabezado {
     /*le puse una imagen de fondo a la seccion para diferenciarla*/
-    background-image: url(slack.png);
+    /*background-image: url(slack.png);*/
     background-repeat: repeat;
     font-size: 17px;
     font-family: cursive;
@@ -24,6 +27,7 @@ head+body {
 #fotoPerfil:empty {
     float: right;
     border-radius: 50%;
+    box-shadow: 0 0 10px rgb(38, 161, 227);
 }
 
 .clearfix::after {
@@ -33,26 +37,49 @@ head+body {
 }
 
 #sobreMi {
-    background-color: rgb(140, 197, 188);
+    /*background-color: rgb(140, 197, 188);*/
     font-family: cursive;
 }
 
 #trabajos {
-    background-color: rgb(208, 208, 240);
+    /*background-color: rgb(208, 208, 240);*/
 }
 
 #educacion {
-    background-color: rgb(196, 215, 215);
+    /* background-color: rgb(196, 215, 215);*/
 }
 
-#pieDePagina {
+footer {
     /*intente darle estilo de social bar, deberia completar la funcionalidad pero no me dio el tiempo*/
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     background-color: rgb(107, 107, 232);
+    display: flex;
+    justify-content: space-around;
+}
+.pie-de-pagina {
+    display: flex;
+    /* padding-top: inherit; */
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.container {
     font-family: cursive;
     display: flex;
+    /* display: grid; */
+    gap: 10%;
+    flex-wrap: wrap;
+    /* margin: 0.1%; */
+    /* text-align: center; */
     justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
 
+.container_item {
+
+/* margin: 0.01%; */
+
+text-align: center;
 }
