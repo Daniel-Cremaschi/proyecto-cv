@@ -40,7 +40,7 @@ let trabajos = [];
 trabajos[0] = new Trabajo(
     "Grupo Multifood",
     "Gerente de restaurant Möoi",
-    "Gerenciamiento integral de sucursal",
+    "Gerenciamiento integral de sucursal, proveedores, control de stock",
     "05/2006 a la actualidad"
 );
 trabajos[1] = new Trabajo(
@@ -48,6 +48,12 @@ trabajos[1] = new Trabajo(
     "Empleado administrativo",
     "Compras, proveedores, servicios al cliente",
     "03/2003 al 04/2006"
+);
+trabajos[2] = new Trabajo(
+    "ADERCID Recreativos",
+    "Encargado de taller",
+    "Mantenimiento y explotacion de expendedoras automaticas",
+    "12/1996 al 11/1999"
 );
 
 
@@ -59,9 +65,9 @@ function dinamico() {
 
 function contraer(){
     let educacion = document.getElementById("educacion");
-    educacion.style.display == "block" ?
+    educacion.style.display == "grid" ?
     educacion.style.display = "none" :
-    educacion.style.display = "block";
+    educacion.style.display = "grid";
 }
 
 
@@ -77,3 +83,21 @@ function disminuirFoto(identificador) {
     foto.style.width = "14em";
     foto.style.float = "right";
 }
+
+document.getElementById("link_git").addEventListener("click", function() {
+    window.location.href = "https://www.github.com/daniel-cremaschi"; // Reemplaza con la URL de destino
+  });
+
+  document.getElementById("link_linkd").addEventListener("click", function() {
+    window.location.href = "https://linkedin.com/in/danielcremaschi"; // Reemplaza con la URL de destino
+  });
+
+  document.getElementById("link_whatssp").addEventListener("click", function() {
+    window.location.href = "https://web.whatsapp.com"; // Reemplaza con la URL de destino
+  });
+
+  document.getElementById("link_correo").addEventListener("click", function() {
+    var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    window.location.href = mailtoLink; // Reemplaza con la URL de destino
+  });
+  

@@ -13,14 +13,14 @@
         rel="stylesheet">
 
     <title>CV Daniel Cremaschi</title>
-</head>
+</head >
 
-<body onload="dinamico()">
+<body onload="dinamico()" style="background: url('./pexels-lukas-317355.jpg') no-repeat center center/cover;" class="img_bak">
     <header>
         <h1 id="titulo">CV Cremaschi Daniel</h1>
     </header>
-    <main>
-        <div class="clearfix" id="encabezado">
+    <main >
+               <div class="clearfix" id="encabezado">
             <img id="fotoPerfil" src="foto.jpg" alt="Foto" width="230em" onmouseover="aumentarFoto('fotoPerfil')"
                 onmouseleave="disminuirFoto('fotoPerfil')">
 
@@ -29,17 +29,14 @@
                     <b>Nombre Completo:</b>
                     Cremaschi Daniel Omar
                 </p>
+
                 <p>
-                    <b>Tipo y Número de documento:</b>
-                    DNI 17.486.666
-                </p>
-                <p>
-                    <b>Fecha de Nacimiento:</b>
+                    <b>Fecha de nac:</b>
                     23 / 09 / 1965
                 </p>
                 <p>
-                    <b>Estado Civil:</b>
-                    Casado
+                    <b>Telefono:</b>
+                    11 60590283
                 </p>
                 <p>
                     <b>Localidad:</b>
@@ -50,6 +47,7 @@
                     daniel_cremaschi@hotmail.com
                 </p>
             </article>
+            <hr>
         </div>
         <!-- Seccion agregada sobre mi, pequeño resumen personal-->
         <section id="sobreMi">
@@ -59,15 +57,18 @@
                 objetivo común.
             </p>
         </section>
+        <hr>
         <section id="trabajos">
             <h2>Experiencia Laboral</h2>
         </section>
-        <section id="educacion">
+        <hr>
+        <section id="educacion" >
             <h2 onclick="contraer()">Educación</h2>
+         
             <div>
                 <h3>Esc Nac Sup de Comercio Gral San Martin</h3>
                 <p>
-                    <b>Título obtenido</b>
+                    <b>Título obtenido:</b>
                     Perito Contable
                 </p>
             </div>
@@ -83,11 +84,14 @@
             <div>
                 <h3>Estudios en Curso</h3>
                 <p>
-                    <b>Argentina Programa 4.0</b>
-                    Junior Web Full Stack Developer
+                    <b>Argentina Programa 4.0:</b>
+                    Junior Web Full Stack Developer,  Power BI
+                    
                 </p>
+                
             </div>
         </section>
+        <hr>
 
         <!-- fin de pagina con datos de contacto extras -->
 
@@ -96,17 +100,21 @@
     <footer>
         <section class="pie-de-pagina">
             <div class="container">
-                <div class="container_item">
+                <div class="container_item_git" >                    
                     <img src="github.svg" alt="iconoGithub" width="20em" >
-                    <a> Daniel-Cremaschi </a>
+                    <a id="link_git">  Daniel-Cremaschi </a> 
                 </div>
                 <div class="container_item">
                     <img src="linkedin.svg" alt="iconoLinkedin" width="20em" >
-                    <a>https://www.linkedin.com/in/daniel-cremaschi</a>
+                    <a id="link_linkd">/in/daniel-cremaschi</a>
                 </div>
                 <div class="container_item">
                     <img src="whatsapp.svg" alt="iconoWha" width="20em" >
-                    <a> 11 60590283 </a>
+                    <a id="link_whatssp"> 11 60590283 </a>
+                </div>
+                <div class="container_item">
+                    <img src="correo-electronico.png" alt="iconoMail" width="20em" >
+                    <a href="#" id="link_correo"> daniel_cremaschi@hotmail.com </a>
                 </div>
               
             </div>
