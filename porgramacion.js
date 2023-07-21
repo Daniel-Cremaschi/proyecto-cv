@@ -1,5 +1,5 @@
 
-/*el js lo copie del video de Rodrigo, no sabia como hacerlo*/
+/*el js lo copie del video de Rodrigo, no sabia como hacerlo, le agregue lo de los links en el footer*/
 
 
 class Trabajo {
@@ -31,7 +31,7 @@ class Trabajo {
         laburo.appendChild(lapso);
         laburo.style.padding = "1em";
         laburo.style.border = "1px solid black";
-        laburo.style.margin = "3em";
+        laburo.style.margin = "1em";
         trabajos.appendChild(laburo);
     }
 }
@@ -40,7 +40,7 @@ let trabajos = [];
 trabajos[0] = new Trabajo(
     "Grupo Multifood",
     "Gerente de restaurant Möoi",
-    "Gerenciamiento integral de sucursal, proveedores, control de stock",
+    "Gerenciamiento integral de sucursal, proveedores, control de stock, caja, organización de horarios, 30 empleados a cargo. ",
     "05/2006 a la actualidad"
 );
 trabajos[1] = new Trabajo(
@@ -49,10 +49,10 @@ trabajos[1] = new Trabajo(
     "Compras, proveedores, servicios al cliente",
     "03/2003 al 04/2006"
 );
-trabajos[2] = new Trabajo(
-    "ADERCID Recreativos",
-    "Encargado de taller",
-    "Mantenimiento y explotacion de expendedoras automaticas",
+trabajos[2] = new Trabajo(    
+    "ADERCID Recreativos. Mantenimiento y explotacion de expendedoras automaticas",
+    "Encargado de taller", 
+    "Compras y manejo de stock de repuestos e insumos.",
     "12/1996 al 11/1999"
 );
 
@@ -84,20 +84,22 @@ function disminuirFoto(identificador) {
     foto.style.float = "right";
 }
 
+
+//funcionalidad para acceder a los links del footer//
 document.getElementById("link_git").addEventListener("click", function() {
-    window.location.href = "https://www.github.com/daniel-cremaschi"; // Reemplaza con la URL de destino
+    window.location.href = "https://www.github.com/daniel-cremaschi"; 
   });
 
   document.getElementById("link_linkd").addEventListener("click", function() {
-    window.location.href = "https://linkedin.com/in/danielcremaschi"; // Reemplaza con la URL de destino
+    window.location.href = "https://linkedin.com/in/danielcremaschi"; 
   });
 
   document.getElementById("link_whatssp").addEventListener("click", function() {
-    window.location.href = "https://web.whatsapp.com"; // Reemplaza con la URL de destino
+    window.location.href = "https://web.whatsapp.com" ; 
   });
 
   document.getElementById("link_correo").addEventListener("click", function() {
     var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    window.location.href = mailtoLink; // Reemplaza con la URL de destino
+    window.location.href = mailtoLink; 
   });
   

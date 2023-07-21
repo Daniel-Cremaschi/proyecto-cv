@@ -1,13 +1,20 @@
-*{
+* {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-    color: black;
+    padding: 0;    
+
+}
+
+.img_bak {
+    background-image: url(./fondo-claro.jpg);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-size: cover;   
+
 }
 
 
-
-head + main {
+head+main {
     margin: 0.3%;
     display: grid;
     background-color: rgb(243, 239, 235);
@@ -15,12 +22,11 @@ head + main {
 
 }
 
-
 #titulo {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
-    background-color: rgb(122, 173, 232);
+    background: radial-gradient(rgb(85, 238, 249), rgb(107, 107, 232));
 }
 
 #encabezado {
@@ -32,7 +38,6 @@ head + main {
 .datosPersonales {
     margin-left: 1%;
     padding: 4%;
-    
 }
 
 #fotoPerfil:empty {
@@ -47,54 +52,56 @@ head + main {
     clear: both;
     display: table;
 }
+hr{
+    border: 1px solid rgb(23, 111, 243);
+}
 
 #sobreMi {
     font-family: cursive;
     margin: 2em 2em;
     font-size: 25px;
-    
-    
 }
 
 #trabajos {
+    font-family: cursive;
     margin: 0 2em;
     font-size: 20px;
 }
 
-#educacion { 
+#educacion {
+    font-family: cursive;
     font-size: 20px;
-    margin: 0 2rem;
-   
+    margin: 0;
+    display: block;    
+    padding: 5%;
 }
-.img_bak {  
-     width: 100%;
-    height: 100%;
+
+#educacion div {
+    margin-top: 3%;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 footer {
-
     border-radius: 1.5rem;
-    background-color: rgb(107, 107, 232);
+    background: radial-gradient(rgb(85, 238, 249), rgb(107, 107, 232));
     display: flex;
     justify-content: space-around;
     margin: 2rem 0.5rem;
     position: sticky;
-    /*height: 70px;*/
     bottom: 0;
 }
 
 .pie-de-pagina {
-    display: flex;    
+    display: flex;
     width: 100%;
     flex-wrap: nowrap;
     justify-content: space-around;
-    
-    
 }
 
 .container {
     font-family: cursive;
-    display: flex;    
+    display: flex;
     gap: 10%;
     flex-wrap: wrap;
     margin: 0.1%;
@@ -106,8 +113,24 @@ footer {
 }
 
 .container_item {
+    margin: 0.1%;
+    padding: 20 5;
+    text-align: center;
+}
 
-margin: 0.1%;
-padding: 20 5;
-text-align: center;
+/*responsive */
+@media (max-width:600px){
+    #fotoPerfil{
+        width: 7em;
+    }
+    #trabajos{
+        margin: 0 0.5em;
+    }
+    
+    .container_item_correo{
+        display: none;
+    }
+    .container_item_git{
+        display: none;
+    }
 }
