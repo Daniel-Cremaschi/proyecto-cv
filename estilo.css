@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;    
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .img_bak {
@@ -9,8 +9,7 @@
     position: absolute;
     width: 100%;
     height: auto;
-    background-size: cover;   
-
+    background-size: cover;
 }
 
 
@@ -57,7 +56,6 @@ hr{
 }
 
 #sobreMi {
-    font-family: cursive;
     margin: 2em 2em;
     font-size: 25px;
 }
@@ -116,6 +114,7 @@ footer {
     margin: 0.1%;
     padding: 20 5;
     text-align: center;
+    cursor: pointer;
 }
 
 /*responsive */
@@ -133,4 +132,8 @@ footer {
     .container_item_git{
         display: none;
     }
+}
+
+.border-section {
+    border: 1px solid;
 }
